@@ -62,7 +62,6 @@ function Restraunt_form(props) {
         setAddress({ address: address })
     }
 
-    console.log(zip)
     return (
         <form>
             <FormImg

@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 
 function SearchButton (props) {
-console.log('render ',props)
 
 function handleClick(){
 console.log('click ', props)

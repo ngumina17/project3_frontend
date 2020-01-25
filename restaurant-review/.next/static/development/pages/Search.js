@@ -58,32 +58,47 @@ function Header() {
       lineNumber: 28
     },
     __self: this
-  }, __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "https://s3-media0.fl.yelpcdn.com/assets/public/default.yelp_design_web.yji-b085a608c15f110ce750ccef3e1e1db0.png",
+    alt: "yelp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  })), __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
     keywords: keywords.keywords,
     location: location.location,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }), __jsx(_Header_SearchLocation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     newLocation: newLocation,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), __jsx(_Header_SearchKey__WEBPACK_IMPORTED_MODULE_1__["default"], {
     newKeywords: newKeywords,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), __jsx(_Header_AddRestraunt__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }));
@@ -152,8 +167,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function SearchButton(props) {
-  console.log('render ', props);
-
   function handleClick() {
     console.log('click ', props);
   }
@@ -162,7 +175,7 @@ function SearchButton(props) {
     href: "/Search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, __jsx("button", {
@@ -170,7 +183,7 @@ function SearchButton(props) {
     type: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, "Search"));
@@ -8716,7 +8729,7 @@ function Search() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FSearch&absolutePagePath=%2FUsers%2FKassidy%2FDesktop%2Fsei%2Fprojects%2Fproject3_frontend%2Frestaurant-review%2Fpages%2FSearch.js ***!
   \********************************************************************************************************************************************************************************/
@@ -8739,5 +8752,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=Search.js.map

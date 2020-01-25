@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -151,32 +151,47 @@ function Header() {
       lineNumber: 28
     },
     __self: this
-  }, __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "https://s3-media0.fl.yelpcdn.com/assets/public/default.yelp_design_web.yji-b085a608c15f110ce750ccef3e1e1db0.png",
+    alt: "yelp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  })), __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
     keywords: keywords.keywords,
     location: location.location,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }), __jsx(_Header_SearchLocation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     newLocation: newLocation,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), __jsx(_Header_SearchKey__WEBPACK_IMPORTED_MODULE_1__["default"], {
     newKeywords: newKeywords,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), __jsx(_Header_AddRestraunt__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }));
@@ -245,8 +260,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function SearchButton(props) {
-  console.log('render ', props);
-
   function handleClick() {
     console.log('click ', props);
   }
@@ -255,7 +268,7 @@ function SearchButton(props) {
     href: "/Search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, __jsx("button", {
@@ -263,7 +276,7 @@ function SearchButton(props) {
     type: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, "Search"));
@@ -355,10 +368,10 @@ function SearchLocation(props) {
 
 /***/ }),
 
-/***/ "./components/Restraunt_Form/FormCity.js":
-/*!***********************************************!*\
-  !*** ./components/Restraunt_Form/FormCity.js ***!
-  \***********************************************/
+/***/ "./components/Review_Form.js":
+/*!***********************************!*\
+  !*** ./components/Review_Form.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -366,425 +379,18 @@ function SearchLocation(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormCity.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormCity(props) {
-  function handleChange(e) {
-    let city = e.target.value;
-    props.newCity(city);
-  }
-
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "City"), __jsx("input", {
-    type: "text",
-    placeholder: "City",
-    onChange: handleChange,
-    name: "search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormCity);
-
-/***/ }),
-
-/***/ "./components/Restraunt_Form/FormImg.js":
-/*!**********************************************!*\
-  !*** ./components/Restraunt_Form/FormImg.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormImg.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormImg(props) {
-  let newImage = props.newImage;
-
-  function handleChange(e) {
-    let image = e.target.value;
-    props.newImage(image);
-  }
-
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "Image Url"), __jsx("input", {
-    type: "text",
-    placeholder: "Image URL",
-    onChange: handleChange,
-    name: "search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormImg);
-
-/***/ }),
-
-/***/ "./components/Restraunt_Form/FormName.js":
-/*!***********************************************!*\
-  !*** ./components/Restraunt_Form/FormName.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormName.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormName(props) {
-  function handleChange(e) {
-    let name = e.target.value;
-    props.newName(name);
-  }
-
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Form Name"), __jsx("input", {
-    type: "text",
-    placeholder: "Form Name",
-    onChange: handleChange,
-    name: "search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormName);
-
-/***/ }),
-
-/***/ "./components/Restraunt_Form/FormState.js":
-/*!************************************************!*\
-  !*** ./components/Restraunt_Form/FormState.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormState.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormState(props) {
-  function handleChange(e) {
-    let state = e.target.value;
-    props.newState(state);
-  }
-
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "State"), __jsx("input", {
-    type: "text",
-    onChange: handleChange,
-    placeholder: "State",
-    name: "search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormState);
-
-/***/ }),
-
-/***/ "./components/Restraunt_Form/FormStreet.js":
-/*!*************************************************!*\
-  !*** ./components/Restraunt_Form/FormStreet.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormStreet.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormStreet(props) {
-  function handleChange(e) {
-    let address = e.target.value;
-    props.newAddress(address);
-  }
-
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Street Address"), __jsx("input", {
-    type: "text",
-    placeholder: "Street Address",
-    onChange: handleChange,
-    name: "search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormStreet);
-
-/***/ }),
-
-/***/ "./components/Restraunt_Form/FormSubmit.js":
-/*!*************************************************!*\
-  !*** ./components/Restraunt_Form/FormSubmit.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormSubmit.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormSubmit(props) {
-  //if zip is NaN do not send
-  function handleClick() {
-    console.log(props);
-  }
-
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx("button", {
-    onClick: handleClick,
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Add Restraunt"));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormSubmit);
-
-/***/ }),
-
-/***/ "./components/Restraunt_Form/FormZipcode.js":
-/*!**************************************************!*\
-  !*** ./components/Restraunt_Form/FormZipcode.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_Form/FormZipcode.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function FormZipcode(props) {
-  function handleChange(e) {
-    let zip = parseInt(e.target.value);
-    props.newZip(zip);
-  }
-
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Zipcode"), __jsx("input", {
-    type: "text",
-    placeholder: "Zipcode",
-    onChange: handleChange,
-    name: "search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (FormZipcode);
-
-/***/ }),
-
-/***/ "./components/Restraunt_form.js":
-/*!**************************************!*\
-  !*** ./components/Restraunt_form.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Restraunt_Form_FormImg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Restraunt_Form/FormImg */ "./components/Restraunt_Form/FormImg.js");
-/* harmony import */ var _Restraunt_Form_FormName__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Restraunt_Form/FormName */ "./components/Restraunt_Form/FormName.js");
-/* harmony import */ var _Review_Form_Star_Review__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Review_Form/Star_Review */ "./components/Review_Form/Star_Review.js");
-/* harmony import */ var _Review_Form_Review_Field__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Review_Form/Review_Field */ "./components/Review_Form/Review_Field.js");
-/* harmony import */ var _Restraunt_Form_FormState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Restraunt_Form/FormState */ "./components/Restraunt_Form/FormState.js");
-/* harmony import */ var _Restraunt_Form_FormStreet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Restraunt_Form/FormStreet */ "./components/Restraunt_Form/FormStreet.js");
-/* harmony import */ var _Restraunt_Form_FormZipcode__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Restraunt_Form/FormZipcode */ "./components/Restraunt_Form/FormZipcode.js");
-/* harmony import */ var _Restraunt_Form_FormCity__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Restraunt_Form/FormCity */ "./components/Restraunt_Form/FormCity.js");
-/* harmony import */ var _Restraunt_Form_FormSubmit__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Restraunt_Form/FormSubmit */ "./components/Restraunt_Form/FormSubmit.js");
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Restraunt_form.js";
+/* harmony import */ var _Review_Form_Star_Review__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Review_Form/Star_Review */ "./components/Review_Form/Star_Review.js");
+/* harmony import */ var _Review_Form_Review_Field__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Review_Form/Review_Field */ "./components/Review_Form/Review_Field.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Review_Form.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
-
-
-
-
-
-
-function Restraunt_form(props) {
-  const {
-    0: name,
-    1: setName
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    name: ''
-  });
-  const {
-    0: address,
-    1: setAddress
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    address: ''
-  });
-  const {
-    0: city,
-    1: setCity
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    city: ''
-  });
-  const {
-    0: state,
-    1: setState
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    state: ''
-  });
-  const {
-    0: zip,
-    1: setZip
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    zip: 0
-  });
+function Review_Form() {
   const {
     0: rating,
     1: setRating
@@ -797,18 +403,6 @@ function Restraunt_form(props) {
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     text: ''
   });
-  const {
-    0: image,
-    1: setImage
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    image: ''
-  });
-
-  function newImage(image) {
-    setImage({
-      image: image
-    });
-  }
 
   function newRating(rating) {
     setRating({
@@ -822,117 +416,45 @@ function Restraunt_form(props) {
     });
   }
 
-  function newZip(zip) {
-    setZip({
-      zip: zip
-    });
-  }
-
-  function newCity(city) {
-    setCity({
-      city: city
-    });
-  }
-
-  function newState(state) {
-    setState({
-      state: state
-    });
-  }
-
-  function newName(name) {
-    setName({
-      name: name
-    });
-  }
-
-  function newAddress(address) {
-    setAddress({
-      address: address
-    });
-  }
-
-  console.log(zip);
-  return __jsx("form", {
+  console.log(rating);
+  return __jsx("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 23
     },
     __self: this
-  }, __jsx(_Restraunt_Form_FormImg__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    newImage: newImage,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
-  }), __jsx(_Restraunt_Form_FormName__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    newName: newName,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }), __jsx(_Restraunt_Form_FormCity__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    newCity: newCity,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }), __jsx(_Restraunt_Form_FormState__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    newState: newState,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }), __jsx(_Restraunt_Form_FormStreet__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    newAddress: newAddress,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }), __jsx(_Restraunt_Form_FormZipcode__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    newZip: newZip,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: this
-  }), __jsx(_Review_Form_Star_Review__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_Review_Form_Star_Review__WEBPACK_IMPORTED_MODULE_1__["default"], {
     newRating: newRating,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 24
     },
     __self: this
-  }), __jsx(_Review_Form_Review_Field__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), __jsx(_Review_Form_Review_Field__WEBPACK_IMPORTED_MODULE_2__["default"], {
     newText: newText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 27
     },
     __self: this
-  }), __jsx(_Restraunt_Form_FormSubmit__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    name: name.name,
-    address: address.address,
-    city: city.city,
-    image: image.image,
-    state: state.state,
-    zip: zip.zip,
-    text: text.text,
-    rating: rating.rating,
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 30
     },
     __self: this
-  }));
+  }, __jsx("button", {
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "Submit")));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Restraunt_form);
+/* harmony default export */ __webpack_exports__["default"] = (Review_Form);
 
 /***/ }),
 
@@ -997,13 +519,112 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function Star_Review(props) {
   let newRating = props.newRating;
-  return __jsx("h1", {
+  const starsTotal = 5;
+
+  function stars() {
+    console.log('star');
+  }
+
+  return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 15
     },
     __self: this
-  }, "Star Review");
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "Star Review"), __jsx("div", {
+    className: "rating",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("input", {
+    type: "radio",
+    name: "star",
+    id: "star1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), __jsx("label", {
+    htmlFor: "star1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), __jsx("input", {
+    type: "radio",
+    name: "star",
+    id: "star2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), __jsx("label", {
+    htmlFor: "star2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), __jsx("input", {
+    type: "radio",
+    name: "star",
+    id: "star3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx("label", {
+    htmlFor: "star3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx("input", {
+    type: "radio",
+    name: "star",
+    id: "star4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), __jsx("label", {
+    htmlFor: "star4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), __jsx("input", {
+    type: "radio",
+    name: "star",
+    id: "star5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), __jsx("label", {
+    htmlFor: "star5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Star_Review);
@@ -5346,10 +4967,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/RestForm.js":
-/*!***************************!*\
-  !*** ./pages/RestForm.js ***!
-  \***************************/
+/***/ "./pages/RvwForm.js":
+/*!**************************!*\
+  !*** ./pages/RvwForm.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5357,48 +4978,48 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Restraunt_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Restraunt_form */ "./components/Restraunt_form.js");
+/* harmony import */ var _components_Review_Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Review_Form */ "./components/Review_Form.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/pages/RestForm.js";
+var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/pages/RvwForm.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function Add() {
+function FormReview() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("header", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  })), __jsx(_components_Restraunt_form__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
+    },
+    __self: this
+  })), __jsx(_components_Review_Form__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Add);
+/* harmony default export */ __webpack_exports__["default"] = (FormReview);
 
 /***/ }),
 
-/***/ 7:
-/*!*********************************!*\
-  !*** multi ./pages/RestForm.js ***!
-  \*********************************/
+/***/ 6:
+/*!********************************!*\
+  !*** multi ./pages/RvwForm.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/pages/RestForm.js */"./pages/RestForm.js");
+module.exports = __webpack_require__(/*! /Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/pages/RvwForm.js */"./pages/RvwForm.js");
 
 
 /***/ }),
@@ -5448,4 +5069,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=RestForm.js.map
+//# sourceMappingURL=RvwForm.js.map
