@@ -12,14 +12,6 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/Search": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/SingleRestraunt": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js",
