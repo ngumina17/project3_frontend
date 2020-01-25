@@ -1,11 +1,12 @@
 import Link from 'next/link';
-
+import Header from '../components/Header'
+import Restraunt_form from '../components/Restraunt_form'
 
 function HomePage() {
     return (
       <>
-    <div>Welcome to Next.js! </div>
-   <Link href="/about">About Page</Link>
+    <Header/>
+        <Link href="/RvwForm"><a>Review Form</a></Link>
     </>
     )
   }
