@@ -8,7 +8,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/RvwForm": [
+    "/RestForm": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/Search": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -26,6 +30,10 @@
       "static/runtime/polyfills.js.map"
     ],
     "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

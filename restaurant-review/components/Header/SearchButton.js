@@ -2,10 +2,17 @@ import React from 'react'
 import Link from 'next/link'
 
 
-const SearchButton = () => (
-    <Link href="/Search"><button type="search">Search</button></Link>
+function SearchButton (props) {
+console.log('render ',props)
+
+function handleClick(){
+console.log('click ', props)
+}
+
+return(
+    <Link href="/Search"><button onClick={handleClick} type="search">Search</button></Link>
     
-)
+)}
 
 
 export default SearchButton

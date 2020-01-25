@@ -2,11 +2,18 @@ import React from 'react'
 import Link from 'next/link'
 
 
-const FormName = () => (
+function FormName (props) {
+
+    function handleChange(e) {
+        let name = e.target.value
+        props.newName(name)
+    }
+
+return(
     <div>
         <h2>Form Name</h2>
-        <input type="text" placeholder="Form Name" name="search" />
+        <input type="text" placeholder="Form Name" onChange={handleChange} name="search" />
     </div>
-)
+)}
 
 export default FormName

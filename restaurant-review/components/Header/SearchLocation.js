@@ -2,8 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 
 
-const SearchLocation = () => (
-    <input type="text" placeholder="Search Location..." name="search" />
-)
+function SearchLocation(props) {
 
-export default SearchLocation
+
+    function handleChange(e) {
+        let location = (e.target.value)
+        props.newLocation(location)
+    }
+
+
+return(
+    <input type="text" onChange={handleChange}  placeholder="Search Location..." name="search" />
+)}
+    export default SearchLocation

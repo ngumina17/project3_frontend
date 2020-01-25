@@ -119,37 +119,68 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Header = () => __jsx("nav", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), __jsx(_Header_SearchLocation__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}), __jsx(_Header_SearchKey__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}), __jsx(_Header_AddRestraunt__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}));
+function Header() {
+  const {
+    0: keywords,
+    1: setKeywords
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    keywords: ''
+  });
+  const {
+    0: location,
+    1: setLocation
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    location: ''
+  });
+
+  function newKeywords(keywords) {
+    setKeywords({
+      keywords: keywords
+    });
+  }
+
+  function newLocation(location) {
+    setLocation({
+      location: location
+    });
+  }
+
+  return __jsx("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    keywords: keywords.keywords,
+    location: location.location,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }), __jsx(_Header_SearchLocation__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    newLocation: newLocation,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }), __jsx(_Header_SearchKey__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    newKeywords: newKeywords,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }), __jsx(_Header_AddRestraunt__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }));
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -173,21 +204,23 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const AddRestraunt = () => __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/RestForm",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("button", {
-  type: "submit",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, "Add Restraunt"));
+function AddRestraunt() {
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/RestForm",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("button", {
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "Add Restraunt"));
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (AddRestraunt);
 
@@ -211,21 +244,30 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const SearchButton = () => __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/Search",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("button", {
-  type: "search",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, "Search"));
+function SearchButton(props) {
+  console.log('render ', props);
+
+  function handleClick() {
+    console.log('click ', props);
+  }
+
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/Search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx("button", {
+    onClick: handleClick,
+    type: "search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Search"));
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (SearchButton);
 
@@ -249,16 +291,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const SearchKey = () => __jsx("input", {
-  type: "text",
-  placeholder: "Search Keywords...",
-  name: "search",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-});
+function SearchKey(props) {
+  function handleChange(e) {
+    let keywords = e.target.value;
+    props.newKeywords(keywords);
+  }
+
+  return __jsx("input", {
+    type: "text",
+    onChange: handleChange,
+    placeholder: "Search Keywords...",
+    name: "search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  });
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (SearchKey);
 
@@ -282,16 +332,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const SearchLocation = () => __jsx("input", {
-  type: "text",
-  placeholder: "Search Location...",
-  name: "search",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-});
+function SearchLocation(props) {
+  function handleChange(e) {
+    let location = e.target.value;
+    props.newLocation(location);
+  }
+
+  return __jsx("input", {
+    type: "text",
+    onChange: handleChange,
+    placeholder: "Search Location...",
+    name: "search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  });
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (SearchLocation);
 
@@ -4666,46 +4724,7 @@ function HomePage() {
       lineNumber: 8
     },
     __self: this
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/RvwForm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "Review Form")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/Search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "Search")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/RestForm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Restraunt Form")));
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
