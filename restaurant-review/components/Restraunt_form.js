@@ -7,19 +7,19 @@ import FormState from './Restraunt_Form/FormState'
 import FormStreet from './Restraunt_Form/FormStreet'
 import FormZipcode from './Restraunt_Form/FormZipcode'
 import FormSubmit from './Restraunt_Form/FormSubmit'
-import Link from 'next/link'
+
 
 
 const Restraunt_form = () => (
     <nav>
-        <FormImg/>
-<FormName/>
-<FormReview/>
-<FormStar/>
-<FormState/>
-<FormStreet/>
-<FormZipcode/>
-<FormSubmit/>
+        <FormImg />
+        <FormName />
+        <FormReview />
+        <FormStar />
+        <FormState />
+        <FormStreet />
+        <FormZipcode />
+        <FormSubmit />
     </nav>
 )
 

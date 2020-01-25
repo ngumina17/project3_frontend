@@ -4,7 +4,19 @@
     "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
   ],
   "pages": {
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/RvwForm": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/Search": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/SingleRestraunt": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -21,7 +33,7 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/next/dist/pages/_error": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

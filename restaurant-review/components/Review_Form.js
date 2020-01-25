@@ -7,7 +7,7 @@ const Review_Form = () => (
     <nav>
         <Star_Review  />
         <Review_Field />
-        <button type="submit">Submit</button>
+        <Link href="/"><button type="submit">Submit</button></Link>
     </nav>
 )
 

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 const SearchButton = () => (
-    <button type="submit">Submit</button>
+    <Link href="/Search"><button type="search">Search</button></Link>
     
 )
 

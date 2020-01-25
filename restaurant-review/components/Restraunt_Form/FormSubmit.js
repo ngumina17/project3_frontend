@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 const FormSubmit = () => (
-    <button type="submit">Submit</button>
+    <Link href="/"><button type="submit">Add Restraunt</button></Link>
 )
 
 export default FormSubmit
