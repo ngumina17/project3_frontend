@@ -1,12 +1,15 @@
 import Link from 'next/link';
+import Header from '../components/Header'
+import Head from 'next/head';
 
 
 function HomePage() {
     return (
-      <>
-    <div>Welcome to Next.js! </div>
-   <Link href="/about">About Page</Link>
-    </>
+      <div>
+        <link href="/static/stars.css" rel="stylesheet" />
+    <Header/>
+        
+    </div>
     )
   }
   
