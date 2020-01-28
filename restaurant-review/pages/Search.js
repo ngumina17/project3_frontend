@@ -5,12 +5,7 @@ import React from "react";
 class Search extends React.Component{
     constructor(props){
         super(props)
-        this.state={
-            keywords: '',
-            location: ''
-        }
     }
-
     handleChange=(e)=> {
         e.preventDefault()
         this.setState({
@@ -19,14 +14,15 @@ class Search extends React.Component{
        console.log("state", this.state)
     }
 
+
     render(){
 
     return (
         <>
             <header>
-                <Header />
+                <Header onChange={this.handleChange} />
             </header>
-                 <SearchRes />
+               <SearchRes data={this.state} />
 
         </>
     )
