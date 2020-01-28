@@ -11,22 +11,27 @@ class Search extends React.Component{
         }
     }
 
-    handleChange=(e)=> {
+    handleChangeSearch=(e)=> {
         e.preventDefault()
         this.setState({
             [e.target.name]: e.target.value
         })
        console.log("state", this.state)
+// return (this.state)
     }
 
     render(){
-
+        console.log('state passed as props',this.state)
     return (
         <>
             <header>
-                <Header />
+                <Header
+                    handleChangeSearch={this.handleChangeSearch}
+/>
             </header>
-                 <SearchRes />
+                 <SearchRes
+props={this.state}
+/>
 
         </>
     )

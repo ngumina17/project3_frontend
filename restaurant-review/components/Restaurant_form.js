@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import FormImg from './Restraunt_Form/FormImg'
-import FormName from './Restraunt_Form/FormName'
+import FormImg from './Restaurant_Form_Components/FormImg'
+import FormName from './Restaurant_Form_Components/FormName'
 import Star_Review from './Review_Form/Star_Review'
 import Review_Field from './Review_Form/Review_Field'
-import FormState from './Restraunt_Form/FormState'
-import FormStreet from './Restraunt_Form/FormStreet'
-import FormZipcode from './Restraunt_Form/FormZipcode'
-import FormCity from './Restraunt_Form/FormCity'
-import FormSubmit from './Restraunt_Form/FormSubmit'
+import FormState from './Restaurant_Form_Components/FormState'
+import FormStreet from './Restaurant_Form_Components/FormStreet'
+import FormZipcode from './Restaurant_Form_Components/FormZipcode'
+import FormCity from './Restaurant_Form_Components/FormCity'
+import FormSubmit from './Restaurant_Form_Components/FormSubmit'
 
 
 

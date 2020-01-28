@@ -3,6 +3,11 @@ import Link from 'next/link'
 
 
 function SearchButton(props){
+  // console.log(props)
+
+function Lcik
+
+
 return(
 <div id='search'>
     <Link href="/Search"><button onClick={props.onChange} type="search" >Search</button></Link>
