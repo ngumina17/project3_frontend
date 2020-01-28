@@ -2,22 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 
 
-class SearchLocation extends React.Component{
-    constructor(){
-        super()
-    }
-
-    
-
-    render(){
+function SearchLocation(props){
 
 return(
-    <input type="text" onChange={this.handleChange}  placeholder="Search Location..." name="search" />
+    <input type="text" onChange={props.onChange} placeholder="Search Location..." name="location" />
 )
 }
-
-}
-
-
-   
+ 
 export default SearchLocation

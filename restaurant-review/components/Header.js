@@ -3,7 +3,6 @@ import SearchKey from './Header_Components/SearchKey'
 import SearchLocation from './Header_Components/SearchLocation'
 import SearchButton from './Header_Components/SearchButton'
 import AddRestraunt from './Header_Components/SearchRestaurant'
-import './Header/header.module.css'
 import Link from 'next/link'
 
 
@@ -12,10 +11,6 @@ import Link from 'next/link'
 class Header extends React.Component{
     constructor(props){
         super(props)
-        this.state={
-            keywords: '',
-            location: ''
-        }
     }
 
     handleChange=(e)=> {
@@ -25,7 +20,6 @@ class Header extends React.Component{
         })
        console.log("state", this.state)
     }
-    }
 
     render(){
 
@@ -33,32 +27,20 @@ class Header extends React.Component{
             <nav id='home'>
                 <Link href="/"><img src= 'https://s3-media0.fl.yelpcdn.com/assets/public/default.yelp_design_web.yji-b085a608c15f110ce750ccef3e1e1db0.png' alt='yelp'/></Link>
                 <SearchButton
-                    keywords={keywords.keywords}
-                    location={location.location}
                 />
                 <SearchLocation
                     onChange={this.handleChange}
-                    newLocation={newLocation}
                 />
                 <SearchKey
-                    newKeywords={newKeywords}
+                    onChange={this.handleChange}
                 />
                 <AddRestraunt
                 />
             </nav>
         )
-}
-
+    }
 }
 
 
    
 export default Header;
-
-
-
-
-
-}
-
-export default Header
