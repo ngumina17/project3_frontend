@@ -5,12 +5,15 @@ import Link from 'next/link'
 function SearchButton(props){
   // console.log(props)
 
-function Lcik
+  function click(props){
+    console.log(props.onChange)
+console.log(props)
+}
 
 
 return(
 <div id='search'>
-    <Link href="/Search"><button onClick={props.onChange} type="search" >Search</button></Link>
+    <Link href="/Search"><button onClick={click} type="search" >Search</button></Link>
    
         {/* <style jsx>{`
         div,

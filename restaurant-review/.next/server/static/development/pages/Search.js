@@ -218,26 +218,31 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function SearchButton(props) {
   // console.log(props)
+  function click(props) {
+    console.log(props.onChange);
+    console.log(props);
+  }
+
   return __jsx("div", {
     id: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 15
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/Search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 16
     },
     __self: this
   }, __jsx("button", {
-    onClick: props.onChange,
+    onClick: click,
     type: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 16
     },
     __self: this
   }, "Search")));
