@@ -1,4 +1,4 @@
-import Restraunt_form from '../components/Restraunt_form'
+import Restaurant_form from '../components/Restaurant_form'
 import Header from '../components/Header'
 
 function Add() {
@@ -6,7 +6,7 @@ function Add() {
         <header>
             <Header />
         </header>
-        <Restraunt_form />
+        <Restaurant_form />
 
     </>
     )

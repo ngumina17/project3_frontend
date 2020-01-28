@@ -4102,7 +4102,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/danielgleason/Desktop/sei/projects/project3_frontend/restaurant-review/.next");
       return error;
     }
 
