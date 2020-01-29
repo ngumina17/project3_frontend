@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-function SingleResult() {
+function SingleResult(props) {
     //map through list to reprint all info needed
     // 
     return (
+        <>
+        {console.log(props.data)}
         <div>
             <h2>Image</h2>
-<Link href = "/SingleRestraunt">Restraunt Name</Link>
+<Link href = "/Restshow">Restraunt Name</Link>
             
             <h3>Star Count</h3>
             <h3>Street Address</h3>
@@ -15,6 +17,7 @@ function SingleResult() {
             <h3>State</h3>
             <h3>Zipcode</h3>
         </div>
+        </>
     )
 }
 

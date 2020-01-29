@@ -4,9 +4,10 @@ import Link from 'next/link'
 
 function SearchRes (props) {
 console.log(props)
+
 return(
     <div>
-        <Results/>
+        <Results data={props.data} />
     </div>
 )}
 
